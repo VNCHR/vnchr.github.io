@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./LexendDeca-Regular.ttf');
+}
