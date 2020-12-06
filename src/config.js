@@ -1,8 +1,11 @@
 let config = {};
 
-config.deadline = '01/12/20 00:00 UTC';
+config.deadline = new Date(1608076800000);
 config.regex = '';
-config.formattedStr = '';
+config.formattedStr = (address) => {
+    return `VNCHR is Awesome!!! (pssst guys send it here ${address} )`
+};
+config.redeemUrl = 'https://forms.gle/TJJp1LuW5SkRtrVi9';
 
 export default config;
 //
