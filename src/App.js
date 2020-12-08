@@ -17,7 +17,7 @@ function App() {
   const generateTweet = (data) => {
     const rawString = config.formattedStr(data.address);
     const encodedURI = encodeURI(rawString);
-    window.location.href=`https://www.twitter.com/intent/tweet?text=${encodedURI}`
+    window.open(`https://www.twitter.com/intent/tweet?text=${encodedURI}`,'_blank');
   }
 
   return (
@@ -31,7 +31,7 @@ function App() {
             {(config.deadline > Date.now())?<div>
             <SimpleGrid columns={2} spacing={10}>
             <Button leftIcon={<FaTwitter/>} colorScheme="blue" onClick={()=>setTweetForm(true)}> Step 1 : Tweet It !</Button>
-            <Button leftIcon={<FaMoneyBillWave/>} colorScheme="green" onClick={()=>{window.location.href=config.redeemUrl}}>Redeem $VNCHR !</Button>
+            <Button leftIcon={<FaMoneyBillWave/>} colorScheme="green" onClick={()=>{window.open(config.redeemUrl,'_blank')}}>Redeem $VNCHR !</Button>
             </SimpleGrid>
             <br></br>
             <Heading size="xl">How?? 🤔</Heading><br></br>
@@ -41,7 +41,7 @@ function App() {
             <Text fontSize="md" as="strong"> The deadline for this round is {config.deadline.toString()}</Text></div> : null}
             {(config.deadline < Date.now())?<div>
               <Text fontSize="4xl" as="strong">Follow us on twitter to find out about our next campaign!</Text>
-              <br/><br/><Button leftIcon={<FaTwitter/>} colorScheme="blue" onClick={() => {window.location.href='https://www.twitter.com/dripvnchr'}}> Twitter </Button>
+              <br/><br/><Button leftIcon={<FaTwitter/>} colorScheme="blue" onClick={() => {window.open('https://www.twitter.com/dripvnchr','_blank')}}> Twitter </Button>
             </div>:null}
           </Box> 
           <Box padding="50px">
@@ -52,9 +52,9 @@ function App() {
           <Text fontSize="3xl" as="mark">Community Curated Weekly Drops 💯</Text>
           <br></br><br></br>
           <SimpleGrid columns={3} spacing={10}>
-          <Button leftIcon={<FaDiscord/>} colorScheme="purple" onClick={() => {window.location.href='https://discord.gg/HrUb92pf'}}> Discord </Button>
-          <Button leftIcon={<FaTwitter/>} colorScheme="blue" onClick={() => {window.location.href='https://www.twitter.com/dripvnchr'}}> Twitter </Button>
-          <Button leftIcon={<FaInstagramSquare/>} colorScheme="red" onClick={() => {window.location.href='https://www.instagram.com/dripvnchr'}}> Instagram </Button>
+          <Button leftIcon={<FaDiscord/>} colorScheme="purple" onClick={() => {window.open('https://discord.gg/rPJK8dGjd5', '_blank')}}> Discord </Button>
+          <Button leftIcon={<FaTwitter/>} colorScheme="blue" onClick={() => {window.open('https://www.twitter.com/dripvnchr','_blank')}}> Twitter </Button>
+          <Button leftIcon={<FaInstagramSquare/>} colorScheme="red" onClick={() => {window.open('https://www.instagram.com/dripvnchr','_blank')}}> Instagram </Button>
           </SimpleGrid> 
           </Box>
         </SimpleGrid>
