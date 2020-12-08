@@ -2,7 +2,7 @@
   "name": "vnchr-faucet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vnchr.github.io/",
+  "homepage": "https://vnchr.github.io/",
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
     "@emotion/react": "^11.1.1",
