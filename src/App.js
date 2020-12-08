@@ -1,11 +1,9 @@
 import Logo from './vnchrlogo.png';
 import Drip from './drip2.jpg';
 import './App.css';
-import Header from './Header.js';
 import { useForm, Controller } from "react-hook-form";
 import { FaTwitter,FaDiscord,FaInstagramSquare,FaMoneyBillWave } from 'react-icons/fa';
 import config from './config.js';
-import {TwitterTweetEmbed} from 'react-twitter-embed';
 import React, { useState } from 'react';
 import { Input, FormControl, FormLabel, FormHelperText, Modal, ModalOverlay, ModalContent, Image, Button, SimpleGrid, Text, Heading, ChakraProvider, Box} from "@chakra-ui/react";
 
